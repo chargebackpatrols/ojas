@@ -19,9 +19,14 @@
 }
 
 .item-2 {
-    background-color: #efe397
+    background-color: royalblue;
 }
 
 .item-3 {
     background-color: #E74C3C;
+}
+
+.btn-more {
+    background-color: gray;
+    color: white;
 }
