@@ -27,7 +27,8 @@ mail($to,$email_subject,$email_body,$headers);
 
 // email response
 $email_body = "<html><body>Dear $name,<br>";
-$email_body .= '<p>We have received your enquiry and will respond to you within 24 hours.  For urgent enquiries please call us on the below number.</p><br>';
+$email_body .= '<p>Thank you for your enquiry and interest in our service. We will review and respond to you within the next 48 hours.</p>';
+$email_body .= '<p> However, if your enquiry needs urgent attention, Please contact our 24-hour customer care at 213-294-8988.</p><br>';
 $email_body .= '<div style="text-align: left;"><div  style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">Sales Department</div>';
 $email_body .= '<div  style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><strong>Chargeback Patrols Inc.</strong></div>';
 $email_body .= '<div style="color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;"><span style="display: inline-block; width: 20px; color: #F7751F;">';
@@ -40,6 +41,6 @@ $email_body .= '</span></div></div></body></html>';
 $headers = "From: noreply@chargebackpatrols.com\r\n"; 
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-mail($email_address,"Your inquiry",$email_body,$headers);
+mail($email_address,"Your enquiry",$email_body,$headers);
 return true;			
 ?>
