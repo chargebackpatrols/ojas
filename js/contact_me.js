@@ -8,6 +8,7 @@ $(function () {
         submitSuccess: function ($form, event) {
             // Prevent spam click and default submit behaviour
             $("#btnSubmit").attr("disabled", true);
+            $("#busy").addClass("show");
             event.preventDefault();
 
             // get values from FORM
@@ -35,6 +36,7 @@ $(function () {
                 success: function () {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
+                    $("#busy").removeClass("show");
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
@@ -47,6 +49,7 @@ $(function () {
                     $('#contactForm').trigger("reset");
                 },
                 error: function () {
+                    $("#busy").removeClass("show");
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")

@@ -31,3 +31,10 @@ p {
 .terms-text {
     font-size: 12px;
 }
+
+.busy-button {
+    position: relative;
+    vertical-align: top;
+    top: -95px;
+    left:0;
+}
