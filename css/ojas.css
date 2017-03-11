@@ -2,33 +2,30 @@
     margin: 10px;
 }
 
-.full-height {
-    height: 100%;
+p {
+    line-height: 1.8;
 }
 
-.full-width {
-    width: 100%;
+.item {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.display-inline {
-    display: inline-block;
-}
-
-.item-1 {
+.item.card-1 {
     background-color: #1ABC9C;
 }
 
-.item-2 {
+.item.card-2 {
     background-color: royalblue;
 }
 
-.item-3 {
+.item.card-3 {
     background-color: #E74C3C;
 }
 
 .btn-more {
     background-color: gray;
-    color: white;
+    color: black;
 }
 
 .terms-text {
